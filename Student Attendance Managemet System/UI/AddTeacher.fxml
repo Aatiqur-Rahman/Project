@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.AddTeacherController">
+   <children>
+      <Label layoutX="157.0" layoutY="21.0" prefHeight="36.0" prefWidth="350.0" style="-fx-background-color: violet; -fx-border-color: red;" text="                       ADD TEACHER">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="119.0" prefHeight="29.0" prefWidth="74.0" text="Teacher_id">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="teacher_id" layoutX="123.0" layoutY="123.0" />
+      <Label layoutX="329.0" layoutY="209.0" prefHeight="29.0" prefWidth="95.0" text="Username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="teacher_usename" layoutX="424.0" layoutY="213.0" />
+      <Label layoutX="350.0" layoutY="119.0" prefHeight="29.0" prefWidth="55.0" text="Mobile">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="teacher_mobile" layoutX="419.0" layoutY="121.0" />
+      <Label layoutX="72.0" layoutY="284.0" prefHeight="29.0" prefWidth="41.0" text="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="teacher_email" layoutX="123.0" layoutY="286.0" />
+      <Label layoutX="28.0" layoutY="207.0" prefHeight="29.0" prefWidth="95.0" text="Teacher_name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="teacher_name" layoutX="123.0" layoutY="213.0" />
+      <PasswordField fx:id="teacher_pass" layoutX="424.0" layoutY="286.0" />
+      <Label layoutX="329.0" layoutY="284.0" prefHeight="29.0" prefWidth="74.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="teacher_add_button" layoutX="156.0" layoutY="444.0" mnemonicParsing="false" onAction="#teacher_add_button_clicked" prefHeight="25.0" prefWidth="328.0" style="-fx-background-color: green;" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

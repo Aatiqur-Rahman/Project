@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.AdminController">
+   <children>
+      <SplitPane layoutX="416.0" layoutY="270.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+        <items>
+          <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="1020.0">
+               <children>
+                  <Accordion layoutX="-1.0" layoutY="-3.0" prefHeight="555.0" prefWidth="220.0" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="978.0" AnchorPane.topAnchor="0.0">
+                    <panes>
+                      <TitledPane animated="false" prefHeight="528.0" prefWidth="250.0" text="ADD" textFill="#453e7f">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                           <content>
+                              <ListView fx:id="addlistview" prefHeight="200.0" prefWidth="200.0" />
+                           </content>
+                        </TitledPane>
+                      <TitledPane animated="false" prefHeight="507.0" prefWidth="250.0" text="UPDATE" textFill="#453e7f">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                           <content>
+                              <ListView fx:id="updatelistview" prefHeight="200.0" prefWidth="200.0" />
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="35.0" prefHeight="507.0" prefWidth="250.0" text="DELETE" textFill="#453e7f">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                           <content>
+                              <ListView fx:id="deletelistview" prefHeight="200.0" prefWidth="200.0" />
+                           </content>
+                        </TitledPane>
+                        <TitledPane fx:id="alldata" animated="false" layoutX="10.0" layoutY="10.0" prefHeight="469.0" prefWidth="238.0" text="ALL DATA" textFill="#453e7f">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                           <content>
+                              <ListView fx:id="AllDatalistview" prefHeight="200.0" prefWidth="200.0" />
+                           </content>
+                        </TitledPane>
+                    </panes>
+                  </Accordion>
+                  <Button layoutX="32.0" layoutY="570.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="174.0" style="-fx-background-color: #ff0000;" text="LOG OUT">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <TabPane fx:id="maintab" layoutX="228.0" layoutY="-2.0" prefHeight="620.0" prefWidth="974.0" rotateGraphic="true" tabClosingPolicy="ALL_TABS">
+                    <tabs>
+                      <Tab text="Untitled Tab 1">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="169.0" layoutY="146.0" prefHeight="243.0" prefWidth="626.0" text="Welcome Sir !!">
+                                       <font>
+                                          <Font size="93.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Label layoutX="554.0" layoutY="8.0" prefHeight="61.0" prefWidth="72.0" text="ADMIN" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

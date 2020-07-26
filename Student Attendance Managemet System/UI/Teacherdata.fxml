@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="UI.TeacherdataController">
+   <children>
+      <Label layoutX="218.0" layoutY="3.0" prefHeight="67.0" prefWidth="356.0" text="Teacher Information">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <TableView fx:id="teacher_table" layoutX="8.0" layoutY="94.0" prefHeight="268.0" prefWidth="784.0">
+        <columns>
+          <TableColumn fx:id="teacher_id" prefWidth="100.33332824707031" text="Teacher_id" />
+          <TableColumn fx:id="teacher_name" prefWidth="164.99998474121094" text="Teacher_name" />
+            <TableColumn fx:id="teacher_mobile" prefWidth="115.33334350585938" text="Mobile" />
+            <TableColumn fx:id="teacher_email" minWidth="3.0" prefWidth="127.66665649414062" text="Email" />
+            <TableColumn fx:id="teacher_username" prefWidth="123.33334350585938" text="Username" />
+            <TableColumn fx:id="teacher_pass" prefWidth="153.33334350585938" text="Passoword" />
+        </columns>
+      </TableView>
+      <TextField layoutX="59.0" layoutY="397.0" prefHeight="41.0" prefWidth="486.0" promptText="Enter Teacher ID....................">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+      <Button layoutX="573.0" layoutY="397.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="207.0" text="Search">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

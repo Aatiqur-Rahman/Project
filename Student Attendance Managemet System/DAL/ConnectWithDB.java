@@ -1,11 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+
 package DAL;
 
-import static java.lang.Class.forName;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -14,19 +10,15 @@ import java.util.logging.Logger;
 
 
 public class ConnectWithDB {
-    public static Connection connector(){
+    public static Connection Connector () throws SQLException{
         try {
-            Class.forName("org.sqlite.JDBC");
-            try {
-                Connection conn = DriverManager.getConnection("jdbc:sqlite:c\\Users\\USER\\Desktop\\DB\\SAMS.db");
-                return conn;
-            } catch (SQLException ex) {
-                Logger.getLogger(ConnectWithDB.class.getName()).log(Level.SEVERE, null, ex);
-            }
+            Class.forName ("org.sqlite.JDBC");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\USER\\Desktop\\DB\\SAMS.db");
+            System.out.println(conn);
+            return conn;
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(ConnectWithDB.class.getName()).log(Level.SEVERE, null, ex);
+            return null;
         }
-        return null;
-        
     }
 }

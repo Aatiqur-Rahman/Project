@@ -24,15 +24,16 @@ public class StructureOfSAMS extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-//       Parent root = FXMLLoader.load(getClass().getResource("/BIZ/Main.fxml"));
-//        //Group root = new Group();
-//       Scene scene = new Scene(root,500,500);
-//       stage.setScene(scene);
-//       stage.initStyle(StageStyle.UNDECORATED);  
-//       stage.show();
+       Parent root = FXMLLoader.load(getClass().getResource("/UI/TakeAttendance.fxml"));
+       root.getStylesheets().add(getClass().getResource("/CSS/style.css").toExternalForm());
+        //Group root = new Group();
+       Scene scene = new Scene(root,1200,720);
+       stage.setScene(scene);
+       stage.initStyle(StageStyle.UNDECORATED);  
+       stage.show();
          //showWelcome();
-        // showStudentPage();
-        Login();
+         //showStudentPage();
+       // Login();
     }
 
     /**

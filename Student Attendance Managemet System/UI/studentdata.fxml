@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="UI.StudentdataController">
+   <children>
+      <TableView fx:id="student" layoutX="17.0" layoutY="88.0" prefHeight="300.0" prefWidth="865.0">
+        <columns>
+          <TableColumn fx:id="st_id" prefWidth="57.66667175292969" text="ID" />
+          <TableColumn fx:id="st_name" prefWidth="97.0" text="Name" />
+            <TableColumn fx:id="st_father_name" prefWidth="107.0" text="Father's Name" />
+            <TableColumn fx:id="st_dob" prefWidth="72.0" text="DOB" />
+            <TableColumn fx:id="st_sex" prefWidth="56.0" text="Sex" />
+            <TableColumn fx:id="st_email" prefWidth="79.0" text="Email" />
+            <TableColumn fx:id="st_mobile" prefWidth="92.66665649414062" text="Mobile" />
+            <TableColumn fx:id="st_semester" prefWidth="69.66665649414062" text="Semester" />
+            <TableColumn fx:id="st_dept" prefWidth="78.0" text="Department" />
+            <TableColumn fx:id="st_user" prefWidth="73.0" text="Username" />
+            <TableColumn fx:id="st_pass" prefWidth="89.0" text="password" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutY="-1.0" prefHeight="76.0" prefWidth="901.0" style="-fx-background-color: Black;">
+         <children>
+            <Label layoutX="328.0" layoutY="5.0" prefHeight="74.0" prefWidth="158.0" text="Student" textFill="WHITE">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="st_serach_field" layoutX="99.0" layoutY="414.0" prefHeight="44.0" prefWidth="494.0" promptText="Enter Student ID">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <Button fx:id="search" layoutX="658.0" layoutY="413.0" mnemonicParsing="false" onAction="#st_search" prefHeight="42.0" prefWidth="163.0" text="Search">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

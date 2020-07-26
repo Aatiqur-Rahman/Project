@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="684.0" prefWidth="1178.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.TakeAttendanceController">
+   <children>
+      <Label layoutX="16.0" layoutY="22.0" prefHeight="27.0" prefWidth="75.0" text="SELECT DATE" />
+      <DatePicker layoutX="109.0" layoutY="21.0" />
+      <Label layoutX="333.0" layoutY="22.0" prefHeight="25.0" prefWidth="105.0" text="SELECT SEMESTER" />
+      <ChoiceBox layoutX="468.0" layoutY="22.0" prefHeight="25.0" prefWidth="168.0" />
+      <Label layoutX="751.0" layoutY="16.0" prefHeight="35.0" prefWidth="95.0" text="SELECT COURSE  " />
+      <ChoiceBox layoutX="871.0" layoutY="20.0" prefHeight="25.0" prefWidth="168.0" />
+      <Label layoutX="347.0" layoutY="71.0" prefHeight="35.0" prefWidth="121.0" text="SELECT DEPARTMENT" />
+      <ChoiceBox layoutX="484.0" layoutY="77.0" prefHeight="25.0" prefWidth="168.0" />
+      <Button fx:id="take_attendance_btn" layoutX="16.0" layoutY="124.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="1128.0" style="-fx-background-color: green;" text="Take   Attendance" textFill="#02f07a">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label layoutX="16.0" layoutY="77.0" prefHeight="27.0" prefWidth="121.0" text="SELECT TEACHER ID" />
+      <TextField layoutX="141.0" layoutY="78.0" prefHeight="25.0" prefWidth="168.0" />
+      <TableView fx:id="attendance_table" layoutX="16.0" layoutY="183.0" prefHeight="490.0" prefWidth="985.0">
+        <columns>
+            <TableColumn fx:id="c_teacher_id" prefWidth="123.33332824707031" text="Teacher_id" />
+            <TableColumn fx:id="c_course_id" prefWidth="155.0" text="Course_id" />
+            <TableColumn fx:id="semester_id" prefWidth="140.0" text="semester_id" />
+            <TableColumn fx:id="dept_name" prefWidth="135.0" text="Dept_name" />
+          <TableColumn fx:id="c_date" prefWidth="102.0" text="Date" />
+            <TableColumn fx:id="c_status" prefWidth="126.6666259765625" text="Status" />
+          <TableColumn fx:id="c_student_id" prefWidth="201.3333740234375" text="Student_id" />
+        </columns>
+      </TableView>
+      <Button fx:id="save_btn" layoutX="1015.0" layoutY="614.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="115.0" style="-fx-background-color: green;" text="SAVE" textFill="#02f07a">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
